@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'assigment2';
+  servers = [];
+  onAddServer() {
+    this.servers.push('AnotherServer');
+  }
+  onRemoveSrever() {
+    const position = id + 1;
+    this.servers.slice(position,1);
+  }
 }
