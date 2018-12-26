@@ -10,8 +10,8 @@ export class AppComponent {
   onAddServer() {
     this.servers.push('AnotherServer');
   }
-  onRemoveSrever() {
+  onRemoveSrever(id: number) {
     const position = id + 1;
-    this.servers.slice(position,1);
+    this.servers.splice(position, 1);
   }
 }
