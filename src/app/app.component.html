@@ -1,15 +1,9 @@
 <div class="container">
+  <app-cockpit></app-cockpit>
+  <hr>
   <div class="row">
     <div class="col-xl-12">
-      <h2>My Servers</h2>
-      <button class="btn btn-primary" (click)="onAddServer()">Add Server</button>
-      <br><br>
-      <ul class="list-group">
-        <li
-          class="list-group-item"
-          *ngFor="let server of servers; let i = index"
-          (click)="onRemoveSrever(i)">{{server}}</li>
-      </ul>
+      <app-server-element *ngFor="let serverElement of serverElements"></app-server-element>
     </div>
   </div>
 </div>
