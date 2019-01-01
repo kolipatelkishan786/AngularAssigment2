@@ -5,7 +5,8 @@
     <p>
       <strong *ngIf="element.type === 'server'" style="color: red">{{element.content}}
       </strong>
-      <em *ngIf="element.type === 'Blueprint'" style="color: blue">{{element.content}}</em>
+      <em *ngIf="element.type === 'Blueprint'">{{element.content}}</em>
     </p>
   </div>
 </div>
+
