@@ -6,9 +6,13 @@
     <input
       type="text"
       class="form-control"
-      #serverNameInput>
+      #serverNameInput placeholder="Server Name">
     <label>Server Content</label>
-    <input type="text" class="form-control" [(ngModel)]="newServerContent" placeholder="Server Content">
+    <input
+      type="text"
+      class="form-control"
+      #serverContentInput
+      placeholder="Server Content">
     <br>
     <button
       class="btn btn-primary"
